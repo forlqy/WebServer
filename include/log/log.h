@@ -47,7 +47,7 @@ private:
     class FormatItem{
     public:
         using ptr = std::shared_ptr<FormatItem>;
-        virtual std::string format(LogEvent::ptr event) = 0;
+        virtual void format(std::ostream os, LogEvent::ptr event) = 0;
         virtual ~FormatItem(){}
     };
     void init();

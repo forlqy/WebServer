@@ -75,5 +75,14 @@ void StdoutLogAppender::log(LogLevel::Level level, LogEvent::ptr event){
     }
 }
 
+LogFormatter::LogFormatter(const std::string& pattern){
+}
+
+void LogFormatter::format(std::ostream os, LogEvent::ptr event){
+}
+
+void LogFormatter::init(){  
+}
+
 }
 //观察者模式 logevent出现 -> logger触发 -> appender显示
