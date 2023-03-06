@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/MyWebServer/WebServer/sylar/log.h
+/home/WebServer/sylar/log.h
 iostream
 -
 string
@@ -24,9 +24,9 @@ fstream
 vector
 -
 
-/home/MyWebServer/WebServer/tests/test.cpp
+/home/WebServer/tests/test.cpp
 iostream
 -
 ../sylar/log.h
-/home/MyWebServer/WebServer/sylar/log.h
+/home/WebServer/sylar/log.h
 

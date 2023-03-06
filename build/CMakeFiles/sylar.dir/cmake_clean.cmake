@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/sylar.dir/home/MyWebServer/WebServer/sylar/src/log.cpp.o"
+  "CMakeFiles/sylar.dir/home/WebServer/sylar/src/log.cpp.o"
   "lib/libsylar.pdb"
   "lib/libsylar.so"
 )

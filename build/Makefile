@@ -51,10 +51,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/MyWebServer/WebServer/build
+CMAKE_SOURCE_DIR = /home/WebServer/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/MyWebServer/WebServer/build
+CMAKE_BINARY_DIR = /home/WebServer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,9 +83,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/MyWebServer/WebServer/build/CMakeFiles /home/MyWebServer/WebServer/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/WebServer/build/CMakeFiles /home/WebServer/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/MyWebServer/WebServer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/WebServer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -139,59 +139,59 @@ sylar/fast:
 	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/build
 .PHONY : sylar/fast
 
-home/MyWebServer/WebServer/sylar/src/log.o: home/MyWebServer/WebServer/sylar/src/log.cpp.o
+home/WebServer/sylar/src/log.o: home/WebServer/sylar/src/log.cpp.o
 
-.PHONY : home/MyWebServer/WebServer/sylar/src/log.o
-
-# target to build an object file
-home/MyWebServer/WebServer/sylar/src/log.cpp.o:
-	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/home/MyWebServer/WebServer/sylar/src/log.cpp.o
-.PHONY : home/MyWebServer/WebServer/sylar/src/log.cpp.o
-
-home/MyWebServer/WebServer/sylar/src/log.i: home/MyWebServer/WebServer/sylar/src/log.cpp.i
-
-.PHONY : home/MyWebServer/WebServer/sylar/src/log.i
-
-# target to preprocess a source file
-home/MyWebServer/WebServer/sylar/src/log.cpp.i:
-	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/home/MyWebServer/WebServer/sylar/src/log.cpp.i
-.PHONY : home/MyWebServer/WebServer/sylar/src/log.cpp.i
-
-home/MyWebServer/WebServer/sylar/src/log.s: home/MyWebServer/WebServer/sylar/src/log.cpp.s
-
-.PHONY : home/MyWebServer/WebServer/sylar/src/log.s
-
-# target to generate assembly for a file
-home/MyWebServer/WebServer/sylar/src/log.cpp.s:
-	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/home/MyWebServer/WebServer/sylar/src/log.cpp.s
-.PHONY : home/MyWebServer/WebServer/sylar/src/log.cpp.s
-
-home/MyWebServer/WebServer/tests/test.o: home/MyWebServer/WebServer/tests/test.cpp.o
-
-.PHONY : home/MyWebServer/WebServer/tests/test.o
+.PHONY : home/WebServer/sylar/src/log.o
 
 # target to build an object file
-home/MyWebServer/WebServer/tests/test.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/MyWebServer/WebServer/tests/test.cpp.o
-.PHONY : home/MyWebServer/WebServer/tests/test.cpp.o
+home/WebServer/sylar/src/log.cpp.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/home/WebServer/sylar/src/log.cpp.o
+.PHONY : home/WebServer/sylar/src/log.cpp.o
 
-home/MyWebServer/WebServer/tests/test.i: home/MyWebServer/WebServer/tests/test.cpp.i
+home/WebServer/sylar/src/log.i: home/WebServer/sylar/src/log.cpp.i
 
-.PHONY : home/MyWebServer/WebServer/tests/test.i
+.PHONY : home/WebServer/sylar/src/log.i
 
 # target to preprocess a source file
-home/MyWebServer/WebServer/tests/test.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/MyWebServer/WebServer/tests/test.cpp.i
-.PHONY : home/MyWebServer/WebServer/tests/test.cpp.i
+home/WebServer/sylar/src/log.cpp.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/home/WebServer/sylar/src/log.cpp.i
+.PHONY : home/WebServer/sylar/src/log.cpp.i
 
-home/MyWebServer/WebServer/tests/test.s: home/MyWebServer/WebServer/tests/test.cpp.s
+home/WebServer/sylar/src/log.s: home/WebServer/sylar/src/log.cpp.s
 
-.PHONY : home/MyWebServer/WebServer/tests/test.s
+.PHONY : home/WebServer/sylar/src/log.s
 
 # target to generate assembly for a file
-home/MyWebServer/WebServer/tests/test.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/MyWebServer/WebServer/tests/test.cpp.s
-.PHONY : home/MyWebServer/WebServer/tests/test.cpp.s
+home/WebServer/sylar/src/log.cpp.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/home/WebServer/sylar/src/log.cpp.s
+.PHONY : home/WebServer/sylar/src/log.cpp.s
+
+home/WebServer/tests/test.o: home/WebServer/tests/test.cpp.o
+
+.PHONY : home/WebServer/tests/test.o
+
+# target to build an object file
+home/WebServer/tests/test.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/WebServer/tests/test.cpp.o
+.PHONY : home/WebServer/tests/test.cpp.o
+
+home/WebServer/tests/test.i: home/WebServer/tests/test.cpp.i
+
+.PHONY : home/WebServer/tests/test.i
+
+# target to preprocess a source file
+home/WebServer/tests/test.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/WebServer/tests/test.cpp.i
+.PHONY : home/WebServer/tests/test.cpp.i
+
+home/WebServer/tests/test.s: home/WebServer/tests/test.cpp.s
+
+.PHONY : home/WebServer/tests/test.s
+
+# target to generate assembly for a file
+home/WebServer/tests/test.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/home/WebServer/tests/test.cpp.s
+.PHONY : home/WebServer/tests/test.cpp.s
 
 # Help Target
 help:
@@ -203,12 +203,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... sylar"
-	@echo "... home/MyWebServer/WebServer/sylar/src/log.o"
-	@echo "... home/MyWebServer/WebServer/sylar/src/log.i"
-	@echo "... home/MyWebServer/WebServer/sylar/src/log.s"
-	@echo "... home/MyWebServer/WebServer/tests/test.o"
-	@echo "... home/MyWebServer/WebServer/tests/test.i"
-	@echo "... home/MyWebServer/WebServer/tests/test.s"
+	@echo "... home/WebServer/sylar/src/log.o"
+	@echo "... home/WebServer/sylar/src/log.i"
+	@echo "... home/WebServer/sylar/src/log.s"
+	@echo "... home/WebServer/tests/test.o"
+	@echo "... home/WebServer/tests/test.i"
+	@echo "... home/WebServer/tests/test.s"
 .PHONY : help
 
 

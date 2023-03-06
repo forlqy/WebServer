@@ -1,4 +1,4 @@
-/home/MyWebServer/WebServer/build/CMakeFiles/rebuild_cache.dir
-/home/MyWebServer/WebServer/build/CMakeFiles/edit_cache.dir
-/home/MyWebServer/WebServer/build/CMakeFiles/test.dir
-/home/MyWebServer/WebServer/build/CMakeFiles/sylar.dir
+/home/WebServer/build/CMakeFiles/rebuild_cache.dir
+/home/WebServer/build/CMakeFiles/edit_cache.dir
+/home/WebServer/build/CMakeFiles/test.dir
+/home/WebServer/build/CMakeFiles/sylar.dir
