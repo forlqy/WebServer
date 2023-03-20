@@ -1,5 +1,7 @@
 /home/WebServer/CMakeFiles/rebuild_cache.dir
+/home/WebServer/CMakeFiles/test_util.dir
 /home/WebServer/CMakeFiles/test_config.dir
 /home/WebServer/CMakeFiles/edit_cache.dir
+/home/WebServer/CMakeFiles/test_thread.dir
 /home/WebServer/CMakeFiles/test.dir
 /home/WebServer/CMakeFiles/sylar.dir

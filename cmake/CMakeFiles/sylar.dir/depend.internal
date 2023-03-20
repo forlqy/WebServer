@@ -6,12 +6,25 @@ CMakeFiles/sylar.dir/sylar/config.cpp.o
  sylar/config.h
  sylar/log.h
  sylar/singleton.h
+ sylar/thread.h
  sylar/util.h
 CMakeFiles/sylar.dir/sylar/log.cpp.o
+ /home/WebServer/sylar/config.h
  /home/WebServer/sylar/log.cpp
  /home/WebServer/sylar/log.h
  /home/WebServer/sylar/singleton.h
+ /home/WebServer/sylar/thread.h
+ /home/WebServer/sylar/util.h
+ sylar/log.h
+CMakeFiles/sylar.dir/sylar/thread.cpp.o
+ /home/WebServer/sylar/log.h
+ /home/WebServer/sylar/singleton.h
+ /home/WebServer/sylar/thread.cpp
+ /home/WebServer/sylar/thread.h
  /home/WebServer/sylar/util.h
 CMakeFiles/sylar.dir/sylar/util.cpp.o
+ /home/WebServer/sylar/log.h
+ /home/WebServer/sylar/singleton.h
+ /home/WebServer/sylar/thread.h
  /home/WebServer/sylar/util.cpp
  /home/WebServer/sylar/util.h

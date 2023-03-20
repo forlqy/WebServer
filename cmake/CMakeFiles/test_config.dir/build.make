@@ -83,6 +83,7 @@ test_config_EXTERNAL_OBJECTS =
 bin/test_config: CMakeFiles/test_config.dir/tests/test_config.cpp.o
 bin/test_config: CMakeFiles/test_config.dir/build.make
 bin/test_config: lib/libsylar.so
+bin/test_config: /usr/lib/x86_64-linux-gnu/libpthread.so
 bin/test_config: /usr/local/lib/libyaml-cpp.so
 bin/test_config: CMakeFiles/test_config.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/WebServer/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/test_config"

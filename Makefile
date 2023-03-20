@@ -114,6 +114,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_util
+
+# Build rule for target.
+test_util: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_util
+.PHONY : test_util
+
+# fast build rule for target.
+test_util/fast:
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/build
+.PHONY : test_util/fast
+
+#=============================================================================
 # Target rules for targets named test_config
 
 # Build rule for target.
@@ -125,6 +138,19 @@ test_config: cmake_check_build_system
 test_config/fast:
 	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/build
 .PHONY : test_config/fast
+
+#=============================================================================
+# Target rules for targets named test_thread
+
+# Build rule for target.
+test_thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_thread
+.PHONY : test_thread
+
+# fast build rule for target.
+test_thread/fast:
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/build
+.PHONY : test_thread/fast
 
 #=============================================================================
 # Target rules for targets named test
@@ -205,6 +231,33 @@ sylar/log.s: sylar/log.cpp.s
 sylar/log.cpp.s:
 	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/log.cpp.s
 .PHONY : sylar/log.cpp.s
+
+sylar/thread.o: sylar/thread.cpp.o
+
+.PHONY : sylar/thread.o
+
+# target to build an object file
+sylar/thread.cpp.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/thread.cpp.o
+.PHONY : sylar/thread.cpp.o
+
+sylar/thread.i: sylar/thread.cpp.i
+
+.PHONY : sylar/thread.i
+
+# target to preprocess a source file
+sylar/thread.cpp.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/thread.cpp.i
+.PHONY : sylar/thread.cpp.i
+
+sylar/thread.s: sylar/thread.cpp.s
+
+.PHONY : sylar/thread.s
+
+# target to generate assembly for a file
+sylar/thread.cpp.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/thread.cpp.s
+.PHONY : sylar/thread.cpp.s
 
 sylar/util.o: sylar/util.cpp.o
 
@@ -287,6 +340,60 @@ tests/test_config.cpp.s:
 	$(MAKE) -f CMakeFiles/test_config.dir/build.make CMakeFiles/test_config.dir/tests/test_config.cpp.s
 .PHONY : tests/test_config.cpp.s
 
+tests/test_thread.o: tests/test_thread.cpp.o
+
+.PHONY : tests/test_thread.o
+
+# target to build an object file
+tests/test_thread.cpp.o:
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cpp.o
+.PHONY : tests/test_thread.cpp.o
+
+tests/test_thread.i: tests/test_thread.cpp.i
+
+.PHONY : tests/test_thread.i
+
+# target to preprocess a source file
+tests/test_thread.cpp.i:
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cpp.i
+.PHONY : tests/test_thread.cpp.i
+
+tests/test_thread.s: tests/test_thread.cpp.s
+
+.PHONY : tests/test_thread.s
+
+# target to generate assembly for a file
+tests/test_thread.cpp.s:
+	$(MAKE) -f CMakeFiles/test_thread.dir/build.make CMakeFiles/test_thread.dir/tests/test_thread.cpp.s
+.PHONY : tests/test_thread.cpp.s
+
+tests/test_util.o: tests/test_util.cpp.o
+
+.PHONY : tests/test_util.o
+
+# target to build an object file
+tests/test_util.cpp.o:
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cpp.o
+.PHONY : tests/test_util.cpp.o
+
+tests/test_util.i: tests/test_util.cpp.i
+
+.PHONY : tests/test_util.i
+
+# target to preprocess a source file
+tests/test_util.cpp.i:
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cpp.i
+.PHONY : tests/test_util.cpp.i
+
+tests/test_util.s: tests/test_util.cpp.s
+
+.PHONY : tests/test_util.s
+
+# target to generate assembly for a file
+tests/test_util.cpp.s:
+	$(MAKE) -f CMakeFiles/test_util.dir/build.make CMakeFiles/test_util.dir/tests/test_util.cpp.s
+.PHONY : tests/test_util.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -294,8 +401,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... test_util"
 	@echo "... test_config"
 	@echo "... edit_cache"
+	@echo "... test_thread"
 	@echo "... test"
 	@echo "... sylar"
 	@echo "... sylar/config.o"
@@ -304,6 +413,9 @@ help:
 	@echo "... sylar/log.o"
 	@echo "... sylar/log.i"
 	@echo "... sylar/log.s"
+	@echo "... sylar/thread.o"
+	@echo "... sylar/thread.i"
+	@echo "... sylar/thread.s"
 	@echo "... sylar/util.o"
 	@echo "... sylar/util.i"
 	@echo "... sylar/util.s"
@@ -313,6 +425,12 @@ help:
 	@echo "... tests/test_config.o"
 	@echo "... tests/test_config.i"
 	@echo "... tests/test_config.s"
+	@echo "... tests/test_thread.o"
+	@echo "... tests/test_thread.i"
+	@echo "... tests/test_thread.s"
+	@echo "... tests/test_util.o"
+	@echo "... tests/test_util.i"
+	@echo "... tests/test_util.s"
 .PHONY : help
 
 

@@ -5,13 +5,26 @@ CMakeFiles/sylar.dir/sylar/config.cpp.o: sylar/config.cpp
 CMakeFiles/sylar.dir/sylar/config.cpp.o: sylar/config.h
 CMakeFiles/sylar.dir/sylar/config.cpp.o: sylar/log.h
 CMakeFiles/sylar.dir/sylar/config.cpp.o: sylar/singleton.h
+CMakeFiles/sylar.dir/sylar/config.cpp.o: sylar/thread.h
 CMakeFiles/sylar.dir/sylar/config.cpp.o: sylar/util.h
 
+CMakeFiles/sylar.dir/sylar/log.cpp.o: sylar/config.h
 CMakeFiles/sylar.dir/sylar/log.cpp.o: sylar/log.cpp
 CMakeFiles/sylar.dir/sylar/log.cpp.o: sylar/log.h
 CMakeFiles/sylar.dir/sylar/log.cpp.o: sylar/singleton.h
+CMakeFiles/sylar.dir/sylar/log.cpp.o: sylar/thread.h
 CMakeFiles/sylar.dir/sylar/log.cpp.o: sylar/util.h
+CMakeFiles/sylar.dir/sylar/log.cpp.o: sylar/log.h
 
+CMakeFiles/sylar.dir/sylar/thread.cpp.o: sylar/log.h
+CMakeFiles/sylar.dir/sylar/thread.cpp.o: sylar/singleton.h
+CMakeFiles/sylar.dir/sylar/thread.cpp.o: sylar/thread.cpp
+CMakeFiles/sylar.dir/sylar/thread.cpp.o: sylar/thread.h
+CMakeFiles/sylar.dir/sylar/thread.cpp.o: sylar/util.h
+
+CMakeFiles/sylar.dir/sylar/util.cpp.o: sylar/log.h
+CMakeFiles/sylar.dir/sylar/util.cpp.o: sylar/singleton.h
+CMakeFiles/sylar.dir/sylar/util.cpp.o: sylar/thread.h
 CMakeFiles/sylar.dir/sylar/util.cpp.o: sylar/util.cpp
 CMakeFiles/sylar.dir/sylar/util.cpp.o: sylar/util.h
 

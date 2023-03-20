@@ -37,8 +37,26 @@ util.h
 sylar/util.h
 singleton.h
 sylar/singleton.h
+thread.h
+sylar/thread.h
 
 sylar/singleton.h
+
+sylar/thread.h
+thread
+-
+functional
+-
+memory
+-
+pthread.h
+-
+semaphore.h
+-
+stdint.h
+-
+atomic
+-
 
 sylar/util.h
 pthread.h
@@ -52,5 +70,9 @@ sys/syscall.h
 stdio.h
 -
 stdint.h
+-
+vector
+-
+string
 -
 

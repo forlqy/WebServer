@@ -6,4 +6,5 @@ CMakeFiles/test_config.dir/tests/test_config.cpp.o
  sylar/config.h
  sylar/log.h
  sylar/singleton.h
+ sylar/thread.h
  sylar/util.h
