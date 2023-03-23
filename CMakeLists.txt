@@ -17,6 +17,8 @@ set(LIB_SRC
     sylar/util.cpp
     sylar/config.cpp
     sylar/thread.cpp
+    sylar/fiber.cpp
+    sylar/scheduler.cpp
     )
 
 add_library(sylar SHARED ${LIB_SRC})
@@ -46,6 +48,15 @@ target_link_libraries(test_thread sylar ${LIB_LIB})
 add_executable(test_util tests/test_util.cpp)
 add_dependencies(test_util sylar)
 target_link_libraries(test_util sylar ${LIB_LIB})
+
+
+add_executable(test_fiber tests/test_fiber.cpp)
+add_dependencies(test_fiber sylar)
+target_link_libraries(test_fiber sylar ${LIB_LIB})
+
+add_executable(test_scheduler tests/test_scheduler.cpp)
+add_dependencies(test_scheduler sylar)
+target_link_libraries(test_scheduler sylar ${LIB_LIB})
 
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
