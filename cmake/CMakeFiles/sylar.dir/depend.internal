@@ -19,6 +19,16 @@ CMakeFiles/sylar.dir/sylar/fiber.cpp.o
  /home/WebServer/sylar/thread.h
  /home/WebServer/sylar/util.h
  sylar/log.h
+CMakeFiles/sylar.dir/sylar/iomanager.cpp.o
+ /home/WebServer/sylar/fiber.h
+ /home/WebServer/sylar/iomanager.cpp
+ /home/WebServer/sylar/iomanager.h
+ /home/WebServer/sylar/log.h
+ /home/WebServer/sylar/macro.h
+ /home/WebServer/sylar/scheduler.h
+ /home/WebServer/sylar/singleton.h
+ /home/WebServer/sylar/thread.h
+ /home/WebServer/sylar/util.h
 CMakeFiles/sylar.dir/sylar/log.cpp.o
  /home/WebServer/sylar/config.h
  /home/WebServer/sylar/log.cpp

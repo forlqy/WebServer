@@ -19,6 +19,7 @@ set(LIB_SRC
     sylar/thread.cpp
     sylar/fiber.cpp
     sylar/scheduler.cpp
+    sylar/iomanager.cpp
     )
 
 add_library(sylar SHARED ${LIB_SRC})
@@ -57,6 +58,11 @@ target_link_libraries(test_fiber sylar ${LIB_LIB})
 add_executable(test_scheduler tests/test_scheduler.cpp)
 add_dependencies(test_scheduler sylar)
 target_link_libraries(test_scheduler sylar ${LIB_LIB})
+
+
+add_executable(test_iomanager tests/test_iomanager.cpp)
+add_dependencies(test_iomanager sylar)
+target_link_libraries(test_iomanager sylar ${LIB_LIB})
 
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
