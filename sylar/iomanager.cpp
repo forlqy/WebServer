@@ -254,9 +254,16 @@ void IOManager::tickle(){
     SYLAR_ASSERT(rt == 1);
 }
 
+bool IOManager::stopping(uint64_t& timeout){
+    timeout = getNextTimer();
+    return timeout == ~0ull
+        && m_pendingEventCount == 0
+        && Scheduler::stopping();
+}
+
 bool IOManager::stopping(){
-    return Scheduler::stopping()
-        && m_pendingEventCount == 0;
+    uint64_t timeout = 0;
+    return stopping(timeout);
 }
 
 void IOManager::idle(){
@@ -266,20 +273,33 @@ void IOManager::idle(){
     });
 
     while(true){
-        if(stopping()){
+        uint64_t next_timeout = 0;
+        if(stopping(next_timeout)){
             SYLAR_LOG_INFO(g_logger) << "name=" << getName() << " idle stopping exit";
             break;
         }
 
         int rt = 0;
         do{
-            static const int MAX_TIMEOUT = 5000; //设置超时时间，防止一直忙等待
-            rt = epoll_wait(m_epfd, events, 64, MAX_TIMEOUT);
+            static const int MAX_TIMEOUT = 3000; //设置超时时间，防止一直忙等待
+            if(next_timeout != ~0ull){
+                next_timeout = (int)next_timeout > MAX_TIMEOUT ? MAX_TIMEOUT : next_timeout;
+            }else{
+                next_timeout = MAX_TIMEOUT;
+            }
+            rt = epoll_wait(m_epfd, events, 64, (int)next_timeout);
             if(rt < 0 && errno == EINTR){
             }else{
                 break;
             }
         }while(true);
+
+        std::vector<std::function<void()> > cbs;
+        listExpiredCb(cbs);
+        if(!cbs.empty()){
+            schedule(cbs.begin(), cbs.end());
+            cbs.clear();
+        }
 
         for(int i = 0; i < rt; ++i){
             epoll_event& event = events[i];
@@ -334,6 +354,10 @@ void IOManager::idle(){
 
         raw_ptr->swapOut();
     }
+}
+
+void IOManager::onTimerInsertedAtFront(){
+    tickle();
 }
 
 

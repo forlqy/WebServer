@@ -20,6 +20,7 @@ set(LIB_SRC
     sylar/fiber.cpp
     sylar/scheduler.cpp
     sylar/iomanager.cpp
+    sylar/timer.cpp
     )
 
 add_library(sylar SHARED ${LIB_SRC})

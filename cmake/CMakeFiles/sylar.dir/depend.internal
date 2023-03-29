@@ -28,6 +28,7 @@ CMakeFiles/sylar.dir/sylar/iomanager.cpp.o
  /home/WebServer/sylar/scheduler.h
  /home/WebServer/sylar/singleton.h
  /home/WebServer/sylar/thread.h
+ /home/WebServer/sylar/timer.h
  /home/WebServer/sylar/util.h
 CMakeFiles/sylar.dir/sylar/log.cpp.o
  /home/WebServer/sylar/config.h
@@ -51,6 +52,11 @@ CMakeFiles/sylar.dir/sylar/thread.cpp.o
  /home/WebServer/sylar/singleton.h
  /home/WebServer/sylar/thread.cpp
  /home/WebServer/sylar/thread.h
+ /home/WebServer/sylar/util.h
+CMakeFiles/sylar.dir/sylar/timer.cpp.o
+ /home/WebServer/sylar/thread.h
+ /home/WebServer/sylar/timer.cpp
+ /home/WebServer/sylar/timer.h
  /home/WebServer/sylar/util.h
 CMakeFiles/sylar.dir/sylar/util.cpp.o
  /home/WebServer/sylar/fiber.h

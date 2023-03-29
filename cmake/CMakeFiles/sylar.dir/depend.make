@@ -27,6 +27,7 @@ CMakeFiles/sylar.dir/sylar/iomanager.cpp.o: sylar/macro.h
 CMakeFiles/sylar.dir/sylar/iomanager.cpp.o: sylar/scheduler.h
 CMakeFiles/sylar.dir/sylar/iomanager.cpp.o: sylar/singleton.h
 CMakeFiles/sylar.dir/sylar/iomanager.cpp.o: sylar/thread.h
+CMakeFiles/sylar.dir/sylar/iomanager.cpp.o: sylar/timer.h
 CMakeFiles/sylar.dir/sylar/iomanager.cpp.o: sylar/util.h
 
 CMakeFiles/sylar.dir/sylar/log.cpp.o: sylar/config.h
@@ -51,6 +52,11 @@ CMakeFiles/sylar.dir/sylar/thread.cpp.o: sylar/singleton.h
 CMakeFiles/sylar.dir/sylar/thread.cpp.o: sylar/thread.cpp
 CMakeFiles/sylar.dir/sylar/thread.cpp.o: sylar/thread.h
 CMakeFiles/sylar.dir/sylar/thread.cpp.o: sylar/util.h
+
+CMakeFiles/sylar.dir/sylar/timer.cpp.o: sylar/thread.h
+CMakeFiles/sylar.dir/sylar/timer.cpp.o: sylar/timer.cpp
+CMakeFiles/sylar.dir/sylar/timer.cpp.o: sylar/timer.h
+CMakeFiles/sylar.dir/sylar/timer.cpp.o: sylar/util.h
 
 CMakeFiles/sylar.dir/sylar/util.cpp.o: sylar/fiber.h
 CMakeFiles/sylar.dir/sylar/util.cpp.o: sylar/log.h
