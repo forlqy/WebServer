@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/WebServer/tests/test_util.cpp" "/home/WebServer/CMakeFiles/test_util.dir/tests/test_util.cpp.o"
+  "/home/ubuntu/WebServer/tests/test_util.cpp" "/home/ubuntu/WebServer/CMakeFiles/test_util.dir/tests/test_util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/WebServer/CMakeFiles/sylar.dir/DependInfo.cmake"
+  "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

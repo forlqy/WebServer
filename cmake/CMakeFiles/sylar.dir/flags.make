@@ -6,5 +6,5 @@ CXX_FLAGS =  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-u
 
 CXX_DEFINES = -Dsylar_EXPORTS
 
-CXX_INCLUDES = -I/home/WebServer/. -I/apps/sylar/include 
+CXX_INCLUDES = -I/home/ubuntu/WebServer/. -I/apps/sylar/include 
 

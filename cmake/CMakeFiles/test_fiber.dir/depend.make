@@ -6,6 +6,7 @@ CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o: sylar/config.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o: sylar/fiber.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o: sylar/log.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o: sylar/macro.h
+CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o: sylar/noncopyable.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o: sylar/scheduler.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o: sylar/singleton.h
 CMakeFiles/test_fiber.dir/tests/test_fiber.cpp.o: sylar/sylar.h

@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/WebServer/tests/test_config.cpp
+/home/ubuntu/WebServer/tests/test_config.cpp
 sylar/config.h
-/home/WebServer/tests/sylar/config.h
+/home/ubuntu/WebServer/tests/sylar/config.h
 sylar/log.h
-/home/WebServer/tests/sylar/log.h
+/home/ubuntu/WebServer/tests/sylar/log.h
 yaml-cpp/yaml.h
 -
 iostream
@@ -74,6 +74,8 @@ sylar/singleton.h
 thread.h
 sylar/thread.h
 
+sylar/noncopyable.h
+
 sylar/singleton.h
 
 sylar/thread.h
@@ -91,6 +93,8 @@ stdint.h
 -
 atomic
 -
+noncopyable.h
+sylar/noncopyable.h
 
 sylar/util.h
 pthread.h

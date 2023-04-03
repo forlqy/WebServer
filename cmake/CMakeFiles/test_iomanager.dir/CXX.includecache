@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/WebServer/tests/test_iomanager.cpp
+/home/ubuntu/WebServer/tests/test_iomanager.cpp
 sylar/sylar.h
 -
 sylar/iomanager.h
@@ -108,6 +108,8 @@ assert.h
 util.h
 sylar/util.h
 
+sylar/noncopyable.h
+
 sylar/scheduler.h
 memory
 -
@@ -155,6 +157,8 @@ stdint.h
 -
 atomic
 -
+noncopyable.h
+sylar/noncopyable.h
 
 sylar/timer.h
 memory

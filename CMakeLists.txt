@@ -21,6 +21,8 @@ set(LIB_SRC
     sylar/scheduler.cpp
     sylar/iomanager.cpp
     sylar/timer.cpp
+    sylar/hook.cpp
+    sylar/fd_manager.cpp
     )
 
 add_library(sylar SHARED ${LIB_SRC})
@@ -29,6 +31,7 @@ add_library(sylar SHARED ${LIB_SRC})
 
 set(LIB_LIB
     sylar
+    dl
     ${PTHREAD}
     ${YAMLCPP}
     )
@@ -64,6 +67,11 @@ target_link_libraries(test_scheduler sylar ${LIB_LIB})
 add_executable(test_iomanager tests/test_iomanager.cpp)
 add_dependencies(test_iomanager sylar)
 target_link_libraries(test_iomanager sylar ${LIB_LIB})
+
+
+add_executable(test_hook tests/test_hook.cpp)
+add_dependencies(test_hook sylar)
+target_link_libraries(test_hook sylar ${LIB_LIB})
 
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

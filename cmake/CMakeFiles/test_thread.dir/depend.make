@@ -6,6 +6,7 @@ CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: sylar/config.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: sylar/fiber.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: sylar/log.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: sylar/macro.h
+CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: sylar/noncopyable.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: sylar/scheduler.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: sylar/singleton.h
 CMakeFiles/test_thread.dir/tests/test_thread.cpp.o: sylar/sylar.h

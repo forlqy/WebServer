@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/WebServer/tests/test_thread.cpp
+/home/ubuntu/WebServer/tests/test_thread.cpp
 sylar/sylar.h
-/home/WebServer/tests/sylar/sylar.h
+/home/ubuntu/WebServer/tests/sylar/sylar.h
 unistd.h
 -
 
@@ -88,6 +88,8 @@ assert.h
 util.h
 sylar/util.h
 
+sylar/noncopyable.h
+
 sylar/scheduler.h
 memory
 -
@@ -135,6 +137,8 @@ stdint.h
 -
 atomic
 -
+noncopyable.h
+sylar/noncopyable.h
 
 sylar/util.h
 pthread.h

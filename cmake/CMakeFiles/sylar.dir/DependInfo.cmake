@@ -4,14 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/WebServer/sylar/config.cpp" "/home/WebServer/CMakeFiles/sylar.dir/sylar/config.cpp.o"
-  "/home/WebServer/sylar/fiber.cpp" "/home/WebServer/CMakeFiles/sylar.dir/sylar/fiber.cpp.o"
-  "/home/WebServer/sylar/iomanager.cpp" "/home/WebServer/CMakeFiles/sylar.dir/sylar/iomanager.cpp.o"
-  "/home/WebServer/sylar/log.cpp" "/home/WebServer/CMakeFiles/sylar.dir/sylar/log.cpp.o"
-  "/home/WebServer/sylar/scheduler.cpp" "/home/WebServer/CMakeFiles/sylar.dir/sylar/scheduler.cpp.o"
-  "/home/WebServer/sylar/thread.cpp" "/home/WebServer/CMakeFiles/sylar.dir/sylar/thread.cpp.o"
-  "/home/WebServer/sylar/timer.cpp" "/home/WebServer/CMakeFiles/sylar.dir/sylar/timer.cpp.o"
-  "/home/WebServer/sylar/util.cpp" "/home/WebServer/CMakeFiles/sylar.dir/sylar/util.cpp.o"
+  "/home/ubuntu/WebServer/sylar/config.cpp" "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/sylar/config.cpp.o"
+  "/home/ubuntu/WebServer/sylar/fd_manager.cpp" "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/sylar/fd_manager.cpp.o"
+  "/home/ubuntu/WebServer/sylar/fiber.cpp" "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/sylar/fiber.cpp.o"
+  "/home/ubuntu/WebServer/sylar/hook.cpp" "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/sylar/hook.cpp.o"
+  "/home/ubuntu/WebServer/sylar/iomanager.cpp" "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/sylar/iomanager.cpp.o"
+  "/home/ubuntu/WebServer/sylar/log.cpp" "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/sylar/log.cpp.o"
+  "/home/ubuntu/WebServer/sylar/scheduler.cpp" "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/sylar/scheduler.cpp.o"
+  "/home/ubuntu/WebServer/sylar/thread.cpp" "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/sylar/thread.cpp.o"
+  "/home/ubuntu/WebServer/sylar/timer.cpp" "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/sylar/timer.cpp.o"
+  "/home/ubuntu/WebServer/sylar/util.cpp" "/home/ubuntu/WebServer/CMakeFiles/sylar.dir/sylar/util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

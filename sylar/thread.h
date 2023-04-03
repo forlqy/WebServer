@@ -8,20 +8,18 @@
 #include <semaphore.h>
 #include <stdint.h>
 #include <atomic>
+
+#include "noncopyable.h"
 //c++11 线程库没有读写锁，所以读写锁部分使用pthread库
 namespace sylar{
 
-class Semaphore{
+class Semaphore : Noncopyable{
 public:
     Semaphore(uint32_t count = 0);
     ~Semaphore();
 
     void wait();
     void notify();
-private:
-    Semaphore(const Semaphore&) = delete;
-    Semaphore(const Semaphore&&) = delete;
-    Semaphore& operator= (const Semaphore) = delete;
 private:
     sem_t m_semaphore;
 };
@@ -119,7 +117,7 @@ private:
     bool m_locked;
 };
 
-class Mutex{
+class Mutex : Noncopyable{
 public:
     using Lock = ScopedLockImp1<Mutex>;
     Mutex(){
@@ -141,7 +139,7 @@ private:
     pthread_mutex_t m_mutex;
 };
 
-class NullMutex {
+class NullMutex : Noncopyable{
 public:
     typedef ScopedLockImp1<NullMutex> Lock;
     NullMutex() {}
@@ -150,7 +148,7 @@ public:
     void unlock() {}
 };
 
-class RWMutex{
+class RWMutex : Noncopyable{
 public:
     using ReadLock = ReadScopedLockImp1<RWMutex>;
     using WriteLock = WriteScopedLockImp1<RWMutex>;
@@ -177,7 +175,7 @@ private:
     pthread_rwlock_t m_lock;
 };
 
-class NullRWMutex{
+class NullRWMutex : Noncopyable{
 public:
     typedef ReadScopedLockImp1<NullMutex> ReadLock;
     typedef WriteScopedLockImp1<NullMutex> WriteLock;
@@ -190,7 +188,7 @@ public:
     void unlock() {}
 };
 
-class Spinlock{
+class Spinlock : Noncopyable{
 public:
     using Lock = ScopedLockImp1<Spinlock>;
     Spinlock(){
@@ -212,7 +210,7 @@ private:
     pthread_spinlock_t m_mutex;
 };
 
-class CASLock{
+class CASLock : Noncopyable{
 public:
     using Lock = ScopedLockImp1<CASLock>;
     CASLock(){
