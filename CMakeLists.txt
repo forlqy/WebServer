@@ -23,6 +23,8 @@ set(LIB_SRC
     sylar/timer.cpp
     sylar/hook.cpp
     sylar/fd_manager.cpp
+    sylar/address.cpp
+    sylar/socket.cpp
     )
 
 add_library(sylar SHARED ${LIB_SRC})
@@ -73,6 +75,13 @@ add_executable(test_hook tests/test_hook.cpp)
 add_dependencies(test_hook sylar)
 target_link_libraries(test_hook sylar ${LIB_LIB})
 
+add_executable(test_address tests/test_address.cpp)
+add_dependencies(test_address sylar)
+target_link_libraries(test_address sylar ${LIB_LIB})
+
+add_executable(test_socket tests/test_socket.cpp)
+add_dependencies(test_socket sylar)
+target_link_libraries(test_socket sylar ${LIB_LIB})
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

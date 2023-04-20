@@ -6,6 +6,7 @@
 #include <sys/ioctl.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <stdint.h>
 #include <time.h>
 
 namespace sylar{
@@ -84,6 +85,7 @@ extern getsockopt_fun getsockopt_f;
 typedef int (*setsockopt_fun)(int sockfd, int level, int optname, const void *optval, socklen_t optlen);
 extern setsockopt_fun setsockopt_f;
 
+extern int connect_with_timeout(int fd, const struct sockaddr* addr, socklen_t addrlen, uint64_t timeout_ms);
 }
 
 #endif

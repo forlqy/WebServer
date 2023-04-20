@@ -11,7 +11,7 @@ sylar::Logger::ptr g_logger = SYLAR_LOG_NAME("system");
 
 namespace sylar{
 
-static sylar::ConfigVar<int>::ptr g_tcp_connect_timeout = sylar::Config::Lookup("tap.connect.timeout", 5000, "tcp connect timeout");
+static sylar::ConfigVar<int>::ptr g_tcp_connect_timeout = sylar::Config::Lookup("tcp.connect.timeout", 5000, "tcp connect timeout");
 
 static thread_local bool t_hook_enable = false;
 
@@ -85,6 +85,7 @@ struct timer_info{
     int cancelled = 0;
 };
 
+//用于实现对系统 IO 函数的 Hook，以便在 IO 操作超时时能够自动切换协程、避免阻塞等问题。
 template<typename OriginFun, typename ... Args>
 static ssize_t do_io(int fd, OriginFun fun, const char* hook_fun_name, uint32_t event,
         int timeout_so, Args&&... args){

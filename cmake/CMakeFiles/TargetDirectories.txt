@@ -1,5 +1,7 @@
+/home/ubuntu/WebServer/CMakeFiles/test_socket.dir
 /home/ubuntu/WebServer/CMakeFiles/test_iomanager.dir
 /home/ubuntu/WebServer/CMakeFiles/test_scheduler.dir
+/home/ubuntu/WebServer/CMakeFiles/test_address.dir
 /home/ubuntu/WebServer/CMakeFiles/test_fiber.dir
 /home/ubuntu/WebServer/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/WebServer/CMakeFiles/test_util.dir
