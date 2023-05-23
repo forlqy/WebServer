@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/ubuntu/WebServer")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ubuntu/WebServer/cmake")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ubuntu/WebServer/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

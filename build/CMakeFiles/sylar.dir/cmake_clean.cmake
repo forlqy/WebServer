@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../lib/libsylar.pdb"
   "../lib/libsylar.so"
   "CMakeFiles/sylar.dir/sylar/address.cpp.o"
+  "CMakeFiles/sylar.dir/sylar/bytearray.cpp.o"
   "CMakeFiles/sylar.dir/sylar/config.cpp.o"
   "CMakeFiles/sylar.dir/sylar/fd_manager.cpp.o"
   "CMakeFiles/sylar.dir/sylar/fiber.cpp.o"

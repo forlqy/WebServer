@@ -5,7 +5,7 @@
 static sylar::Logger::ptr g_logger = SYLAR_LOG_ROOT();
 
 void test_socket(){
-    sylar::IPAddress::ptr addr = sylar::Address::LookupAnyIPAddress("www.baidu.com");
+    sylar::IPAddress::ptr addr = sylar::Address::LookupAnyIPAddress("43.143.162.227");
     if(addr){
         SYLAR_LOG_INFO(g_logger) << "get address: " << addr->toString();
     }else{

@@ -10,6 +10,15 @@ CMakeFiles/sylar.dir/sylar/address.cpp.o: ../sylar/singleton.h
 CMakeFiles/sylar.dir/sylar/address.cpp.o: ../sylar/thread.h
 CMakeFiles/sylar.dir/sylar/address.cpp.o: ../sylar/util.h
 
+CMakeFiles/sylar.dir/sylar/bytearray.cpp.o: ../sylar/bytearray.cpp
+CMakeFiles/sylar.dir/sylar/bytearray.cpp.o: ../sylar/bytearray.h
+CMakeFiles/sylar.dir/sylar/bytearray.cpp.o: ../sylar/endian.h
+CMakeFiles/sylar.dir/sylar/bytearray.cpp.o: ../sylar/log.h
+CMakeFiles/sylar.dir/sylar/bytearray.cpp.o: ../sylar/noncopyable.h
+CMakeFiles/sylar.dir/sylar/bytearray.cpp.o: ../sylar/singleton.h
+CMakeFiles/sylar.dir/sylar/bytearray.cpp.o: ../sylar/thread.h
+CMakeFiles/sylar.dir/sylar/bytearray.cpp.o: ../sylar/util.h
+
 CMakeFiles/sylar.dir/sylar/config.cpp.o: ../sylar/config.h
 CMakeFiles/sylar.dir/sylar/config.cpp.o: ../sylar/log.h
 CMakeFiles/sylar.dir/sylar/config.cpp.o: ../sylar/noncopyable.h

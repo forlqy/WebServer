@@ -4,7 +4,7 @@ project(sylar)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_CXX_FLAGS "$ENV{CXXFLAGS} -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function")
 
-set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}./cmake)   # 设置中间文件路径
+#set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}./cmake)   # 设置中间文件路径
 
 include_directories(.)
 include_directories(/apps/sylar/include)
@@ -27,6 +27,7 @@ set(LIB_SRC
     sylar/fd_manager.cpp
     sylar/address.cpp
     sylar/socket.cpp
+    sylar/bytearray.cpp
     )
 
 add_library(sylar SHARED ${LIB_SRC})
@@ -84,6 +85,11 @@ target_link_libraries(test_address sylar ${LIB_LIB})
 add_executable(test_socket tests/test_socket.cpp)
 add_dependencies(test_socket sylar)
 target_link_libraries(test_socket sylar ${LIB_LIB})
+
+add_executable(test_bytearray tests/test_bytearray.cpp)
+add_dependencies(test_bytearray sylar)
+target_link_libraries(test_bytearray sylar ${LIB_LIB})
+
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
