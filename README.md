@@ -13,6 +13,14 @@ git clone
 ```
 git clone
 ```
+3. Ragel工具(生成有限状态机)
+```
+sudo apt install ragel
+```
+```
+ragel -G2 -C http11_parser.rl -o http11_parser.cpp
+ragel -G2 -C httpclient_parser.rl -o httpclient_parser.cpp
+```
 
 
 ## 部署
