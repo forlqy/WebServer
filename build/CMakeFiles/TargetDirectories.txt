@@ -1,8 +1,11 @@
+/home/ubuntu/WebServer/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/WebServer/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/WebServer/build/CMakeFiles/echo_server.dir
+/home/ubuntu/WebServer/build/CMakeFiles/test_tcp_server.dir
+/home/ubuntu/WebServer/build/CMakeFiles/test_http_parser.dir
 /home/ubuntu/WebServer/build/CMakeFiles/test_hook.dir
 /home/ubuntu/WebServer/build/CMakeFiles/test.dir
 /home/ubuntu/WebServer/build/CMakeFiles/test_thread.dir
-/home/ubuntu/WebServer/build/CMakeFiles/rebuild_cache.dir
-/home/ubuntu/WebServer/build/CMakeFiles/edit_cache.dir
 /home/ubuntu/WebServer/build/CMakeFiles/test_config.dir
 /home/ubuntu/WebServer/build/CMakeFiles/test_bytearray.dir
 /home/ubuntu/WebServer/build/CMakeFiles/sylar.dir
@@ -12,3 +15,4 @@
 /home/ubuntu/WebServer/build/CMakeFiles/test_scheduler.dir
 /home/ubuntu/WebServer/build/CMakeFiles/test_iomanager.dir
 /home/ubuntu/WebServer/build/CMakeFiles/test_socket.dir
+/home/ubuntu/WebServer/build/CMakeFiles/test_http.dir

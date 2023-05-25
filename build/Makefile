@@ -114,6 +114,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named echo_server
+
+# Build rule for target.
+echo_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 echo_server
+.PHONY : echo_server
+
+# fast build rule for target.
+echo_server/fast:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
+.PHONY : echo_server/fast
+
+#=============================================================================
+# Target rules for targets named test_tcp_server
+
+# Build rule for target.
+test_tcp_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_tcp_server
+.PHONY : test_tcp_server
+
+# fast build rule for target.
+test_tcp_server/fast:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/build
+.PHONY : test_tcp_server/fast
+
+#=============================================================================
+# Target rules for targets named test_http_parser
+
+# Build rule for target.
+test_http_parser: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_http_parser
+.PHONY : test_http_parser
+
+# fast build rule for target.
+test_http_parser/fast:
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/build
+.PHONY : test_http_parser/fast
+
+#=============================================================================
 # Target rules for targets named test_hook
 
 # Build rule for target.
@@ -268,6 +307,46 @@ test_socket: cmake_check_build_system
 test_socket/fast:
 	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/build
 .PHONY : test_socket/fast
+
+#=============================================================================
+# Target rules for targets named test_http
+
+# Build rule for target.
+test_http: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_http
+.PHONY : test_http
+
+# fast build rule for target.
+test_http/fast:
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/build
+.PHONY : test_http/fast
+
+examples/echo_server.o: examples/echo_server.cpp.o
+
+.PHONY : examples/echo_server.o
+
+# target to build an object file
+examples/echo_server.cpp.o:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cpp.o
+.PHONY : examples/echo_server.cpp.o
+
+examples/echo_server.i: examples/echo_server.cpp.i
+
+.PHONY : examples/echo_server.i
+
+# target to preprocess a source file
+examples/echo_server.cpp.i:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cpp.i
+.PHONY : examples/echo_server.cpp.i
+
+examples/echo_server.s: examples/echo_server.cpp.s
+
+.PHONY : examples/echo_server.s
+
+# target to generate assembly for a file
+examples/echo_server.cpp.s:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/examples/echo_server.cpp.s
+.PHONY : examples/echo_server.cpp.s
 
 sylar/address.o: sylar/address.cpp.o
 
@@ -431,6 +510,114 @@ sylar/hook.cpp.s:
 	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/hook.cpp.s
 .PHONY : sylar/hook.cpp.s
 
+sylar/http/http.o: sylar/http/http.cpp.o
+
+.PHONY : sylar/http/http.o
+
+# target to build an object file
+sylar/http/http.cpp.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/http.cpp.o
+.PHONY : sylar/http/http.cpp.o
+
+sylar/http/http.i: sylar/http/http.cpp.i
+
+.PHONY : sylar/http/http.i
+
+# target to preprocess a source file
+sylar/http/http.cpp.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/http.cpp.i
+.PHONY : sylar/http/http.cpp.i
+
+sylar/http/http.s: sylar/http/http.cpp.s
+
+.PHONY : sylar/http/http.s
+
+# target to generate assembly for a file
+sylar/http/http.cpp.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/http.cpp.s
+.PHONY : sylar/http/http.cpp.s
+
+sylar/http/http11_parser.o: sylar/http/http11_parser.cpp.o
+
+.PHONY : sylar/http/http11_parser.o
+
+# target to build an object file
+sylar/http/http11_parser.cpp.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/http11_parser.cpp.o
+.PHONY : sylar/http/http11_parser.cpp.o
+
+sylar/http/http11_parser.i: sylar/http/http11_parser.cpp.i
+
+.PHONY : sylar/http/http11_parser.i
+
+# target to preprocess a source file
+sylar/http/http11_parser.cpp.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/http11_parser.cpp.i
+.PHONY : sylar/http/http11_parser.cpp.i
+
+sylar/http/http11_parser.s: sylar/http/http11_parser.cpp.s
+
+.PHONY : sylar/http/http11_parser.s
+
+# target to generate assembly for a file
+sylar/http/http11_parser.cpp.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/http11_parser.cpp.s
+.PHONY : sylar/http/http11_parser.cpp.s
+
+sylar/http/http_parser.o: sylar/http/http_parser.cpp.o
+
+.PHONY : sylar/http/http_parser.o
+
+# target to build an object file
+sylar/http/http_parser.cpp.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/http_parser.cpp.o
+.PHONY : sylar/http/http_parser.cpp.o
+
+sylar/http/http_parser.i: sylar/http/http_parser.cpp.i
+
+.PHONY : sylar/http/http_parser.i
+
+# target to preprocess a source file
+sylar/http/http_parser.cpp.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/http_parser.cpp.i
+.PHONY : sylar/http/http_parser.cpp.i
+
+sylar/http/http_parser.s: sylar/http/http_parser.cpp.s
+
+.PHONY : sylar/http/http_parser.s
+
+# target to generate assembly for a file
+sylar/http/http_parser.cpp.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/http_parser.cpp.s
+.PHONY : sylar/http/http_parser.cpp.s
+
+sylar/http/httpclient_parser.o: sylar/http/httpclient_parser.cpp.o
+
+.PHONY : sylar/http/httpclient_parser.o
+
+# target to build an object file
+sylar/http/httpclient_parser.cpp.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/httpclient_parser.cpp.o
+.PHONY : sylar/http/httpclient_parser.cpp.o
+
+sylar/http/httpclient_parser.i: sylar/http/httpclient_parser.cpp.i
+
+.PHONY : sylar/http/httpclient_parser.i
+
+# target to preprocess a source file
+sylar/http/httpclient_parser.cpp.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/httpclient_parser.cpp.i
+.PHONY : sylar/http/httpclient_parser.cpp.i
+
+sylar/http/httpclient_parser.s: sylar/http/httpclient_parser.cpp.s
+
+.PHONY : sylar/http/httpclient_parser.s
+
+# target to generate assembly for a file
+sylar/http/httpclient_parser.cpp.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/http/httpclient_parser.cpp.s
+.PHONY : sylar/http/httpclient_parser.cpp.s
+
 sylar/iomanager.o: sylar/iomanager.cpp.o
 
 .PHONY : sylar/iomanager.o
@@ -538,6 +725,33 @@ sylar/socket.s: sylar/socket.cpp.s
 sylar/socket.cpp.s:
 	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/socket.cpp.s
 .PHONY : sylar/socket.cpp.s
+
+sylar/tcp_server.o: sylar/tcp_server.cpp.o
+
+.PHONY : sylar/tcp_server.o
+
+# target to build an object file
+sylar/tcp_server.cpp.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/tcp_server.cpp.o
+.PHONY : sylar/tcp_server.cpp.o
+
+sylar/tcp_server.i: sylar/tcp_server.cpp.i
+
+.PHONY : sylar/tcp_server.i
+
+# target to preprocess a source file
+sylar/tcp_server.cpp.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/tcp_server.cpp.i
+.PHONY : sylar/tcp_server.cpp.i
+
+sylar/tcp_server.s: sylar/tcp_server.cpp.s
+
+.PHONY : sylar/tcp_server.s
+
+# target to generate assembly for a file
+sylar/tcp_server.cpp.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/tcp_server.cpp.s
+.PHONY : sylar/tcp_server.cpp.s
 
 sylar/thread.o: sylar/thread.cpp.o
 
@@ -782,6 +996,60 @@ tests/test_hook.cpp.s:
 	$(MAKE) -f CMakeFiles/test_hook.dir/build.make CMakeFiles/test_hook.dir/tests/test_hook.cpp.s
 .PHONY : tests/test_hook.cpp.s
 
+tests/test_http.o: tests/test_http.cpp.o
+
+.PHONY : tests/test_http.o
+
+# target to build an object file
+tests/test_http.cpp.o:
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cpp.o
+.PHONY : tests/test_http.cpp.o
+
+tests/test_http.i: tests/test_http.cpp.i
+
+.PHONY : tests/test_http.i
+
+# target to preprocess a source file
+tests/test_http.cpp.i:
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cpp.i
+.PHONY : tests/test_http.cpp.i
+
+tests/test_http.s: tests/test_http.cpp.s
+
+.PHONY : tests/test_http.s
+
+# target to generate assembly for a file
+tests/test_http.cpp.s:
+	$(MAKE) -f CMakeFiles/test_http.dir/build.make CMakeFiles/test_http.dir/tests/test_http.cpp.s
+.PHONY : tests/test_http.cpp.s
+
+tests/test_http_parser.o: tests/test_http_parser.cpp.o
+
+.PHONY : tests/test_http_parser.o
+
+# target to build an object file
+tests/test_http_parser.cpp.o:
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.o
+.PHONY : tests/test_http_parser.cpp.o
+
+tests/test_http_parser.i: tests/test_http_parser.cpp.i
+
+.PHONY : tests/test_http_parser.i
+
+# target to preprocess a source file
+tests/test_http_parser.cpp.i:
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.i
+.PHONY : tests/test_http_parser.cpp.i
+
+tests/test_http_parser.s: tests/test_http_parser.cpp.s
+
+.PHONY : tests/test_http_parser.s
+
+# target to generate assembly for a file
+tests/test_http_parser.cpp.s:
+	$(MAKE) -f CMakeFiles/test_http_parser.dir/build.make CMakeFiles/test_http_parser.dir/tests/test_http_parser.cpp.s
+.PHONY : tests/test_http_parser.cpp.s
+
 tests/test_iomanager.o: tests/test_iomanager.cpp.o
 
 .PHONY : tests/test_iomanager.o
@@ -863,6 +1131,33 @@ tests/test_socket.cpp.s:
 	$(MAKE) -f CMakeFiles/test_socket.dir/build.make CMakeFiles/test_socket.dir/tests/test_socket.cpp.s
 .PHONY : tests/test_socket.cpp.s
 
+tests/test_tcp_server.o: tests/test_tcp_server.cpp.o
+
+.PHONY : tests/test_tcp_server.o
+
+# target to build an object file
+tests/test_tcp_server.cpp.o:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cpp.o
+.PHONY : tests/test_tcp_server.cpp.o
+
+tests/test_tcp_server.i: tests/test_tcp_server.cpp.i
+
+.PHONY : tests/test_tcp_server.i
+
+# target to preprocess a source file
+tests/test_tcp_server.cpp.i:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cpp.i
+.PHONY : tests/test_tcp_server.cpp.i
+
+tests/test_tcp_server.s: tests/test_tcp_server.cpp.s
+
+.PHONY : tests/test_tcp_server.s
+
+# target to generate assembly for a file
+tests/test_tcp_server.cpp.s:
+	$(MAKE) -f CMakeFiles/test_tcp_server.dir/build.make CMakeFiles/test_tcp_server.dir/tests/test_tcp_server.cpp.s
+.PHONY : tests/test_tcp_server.cpp.s
+
 tests/test_thread.o: tests/test_thread.cpp.o
 
 .PHONY : tests/test_thread.o
@@ -923,11 +1218,14 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... echo_server"
+	@echo "... test_tcp_server"
+	@echo "... test_http_parser"
 	@echo "... test_hook"
 	@echo "... test"
 	@echo "... test_thread"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... test_config"
 	@echo "... test_bytearray"
 	@echo "... sylar"
@@ -937,6 +1235,10 @@ help:
 	@echo "... test_scheduler"
 	@echo "... test_iomanager"
 	@echo "... test_socket"
+	@echo "... test_http"
+	@echo "... examples/echo_server.o"
+	@echo "... examples/echo_server.i"
+	@echo "... examples/echo_server.s"
 	@echo "... sylar/address.o"
 	@echo "... sylar/address.i"
 	@echo "... sylar/address.s"
@@ -955,6 +1257,18 @@ help:
 	@echo "... sylar/hook.o"
 	@echo "... sylar/hook.i"
 	@echo "... sylar/hook.s"
+	@echo "... sylar/http/http.o"
+	@echo "... sylar/http/http.i"
+	@echo "... sylar/http/http.s"
+	@echo "... sylar/http/http11_parser.o"
+	@echo "... sylar/http/http11_parser.i"
+	@echo "... sylar/http/http11_parser.s"
+	@echo "... sylar/http/http_parser.o"
+	@echo "... sylar/http/http_parser.i"
+	@echo "... sylar/http/http_parser.s"
+	@echo "... sylar/http/httpclient_parser.o"
+	@echo "... sylar/http/httpclient_parser.i"
+	@echo "... sylar/http/httpclient_parser.s"
 	@echo "... sylar/iomanager.o"
 	@echo "... sylar/iomanager.i"
 	@echo "... sylar/iomanager.s"
@@ -967,6 +1281,9 @@ help:
 	@echo "... sylar/socket.o"
 	@echo "... sylar/socket.i"
 	@echo "... sylar/socket.s"
+	@echo "... sylar/tcp_server.o"
+	@echo "... sylar/tcp_server.i"
+	@echo "... sylar/tcp_server.s"
 	@echo "... sylar/thread.o"
 	@echo "... sylar/thread.i"
 	@echo "... sylar/thread.s"
@@ -994,6 +1311,12 @@ help:
 	@echo "... tests/test_hook.o"
 	@echo "... tests/test_hook.i"
 	@echo "... tests/test_hook.s"
+	@echo "... tests/test_http.o"
+	@echo "... tests/test_http.i"
+	@echo "... tests/test_http.s"
+	@echo "... tests/test_http_parser.o"
+	@echo "... tests/test_http_parser.i"
+	@echo "... tests/test_http_parser.s"
 	@echo "... tests/test_iomanager.o"
 	@echo "... tests/test_iomanager.i"
 	@echo "... tests/test_iomanager.s"
@@ -1003,6 +1326,9 @@ help:
 	@echo "... tests/test_socket.o"
 	@echo "... tests/test_socket.i"
 	@echo "... tests/test_socket.s"
+	@echo "... tests/test_tcp_server.o"
+	@echo "... tests/test_tcp_server.i"
+	@echo "... tests/test_tcp_server.s"
 	@echo "... tests/test_thread.o"
 	@echo "... tests/test_thread.i"
 	@echo "... tests/test_thread.s"

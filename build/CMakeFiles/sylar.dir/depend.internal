@@ -61,6 +61,30 @@ CMakeFiles/sylar.dir/sylar/hook.cpp.o
  /home/ubuntu/WebServer/sylar/thread.h
  /home/ubuntu/WebServer/sylar/timer.h
  /home/ubuntu/WebServer/sylar/util.h
+CMakeFiles/sylar.dir/sylar/http/http.cpp.o
+ /home/ubuntu/WebServer/sylar/http/http.cpp
+ /home/ubuntu/WebServer/sylar/http/http.h
+CMakeFiles/sylar.dir/sylar/http/http11_parser.cpp.o
+ /home/ubuntu/WebServer/sylar/http/http11_common.h
+ /home/ubuntu/WebServer/sylar/http/http11_parser.cpp
+ /home/ubuntu/WebServer/sylar/http/http11_parser.h
+CMakeFiles/sylar.dir/sylar/http/http_parser.cpp.o
+ ../sylar/config.h
+ ../sylar/log.h
+ ../sylar/noncopyable.h
+ ../sylar/singleton.h
+ ../sylar/thread.h
+ ../sylar/util.h
+ /home/ubuntu/WebServer/sylar/http/http.h
+ /home/ubuntu/WebServer/sylar/http/http11_common.h
+ /home/ubuntu/WebServer/sylar/http/http11_parser.h
+ /home/ubuntu/WebServer/sylar/http/http_parser.cpp
+ /home/ubuntu/WebServer/sylar/http/http_parser.h
+ /home/ubuntu/WebServer/sylar/http/httpclient_parser.h
+CMakeFiles/sylar.dir/sylar/http/httpclient_parser.cpp.o
+ /home/ubuntu/WebServer/sylar/http/http11_common.h
+ /home/ubuntu/WebServer/sylar/http/httpclient_parser.cpp
+ /home/ubuntu/WebServer/sylar/http/httpclient_parser.h
 CMakeFiles/sylar.dir/sylar/iomanager.cpp.o
  /home/ubuntu/WebServer/sylar/fiber.h
  /home/ubuntu/WebServer/sylar/iomanager.cpp
@@ -105,6 +129,22 @@ CMakeFiles/sylar.dir/sylar/socket.cpp.o
  /home/ubuntu/WebServer/sylar/singleton.h
  /home/ubuntu/WebServer/sylar/socket.cpp
  /home/ubuntu/WebServer/sylar/socket.h
+ /home/ubuntu/WebServer/sylar/thread.h
+ /home/ubuntu/WebServer/sylar/timer.h
+ /home/ubuntu/WebServer/sylar/util.h
+CMakeFiles/sylar.dir/sylar/tcp_server.cpp.o
+ ../sylar/log.h
+ /home/ubuntu/WebServer/sylar/address.h
+ /home/ubuntu/WebServer/sylar/config.h
+ /home/ubuntu/WebServer/sylar/fiber.h
+ /home/ubuntu/WebServer/sylar/iomanager.h
+ /home/ubuntu/WebServer/sylar/log.h
+ /home/ubuntu/WebServer/sylar/noncopyable.h
+ /home/ubuntu/WebServer/sylar/scheduler.h
+ /home/ubuntu/WebServer/sylar/singleton.h
+ /home/ubuntu/WebServer/sylar/socket.h
+ /home/ubuntu/WebServer/sylar/tcp_server.cpp
+ /home/ubuntu/WebServer/sylar/tcp_server.h
  /home/ubuntu/WebServer/sylar/thread.h
  /home/ubuntu/WebServer/sylar/timer.h
  /home/ubuntu/WebServer/sylar/util.h
