@@ -132,6 +132,18 @@ CMakeFiles/sylar.dir/sylar/socket.cpp.o: ../sylar/thread.h
 CMakeFiles/sylar.dir/sylar/socket.cpp.o: ../sylar/timer.h
 CMakeFiles/sylar.dir/sylar/socket.cpp.o: ../sylar/util.h
 
+CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o: ../sylar/address.h
+CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o: ../sylar/bytearray.h
+CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o: ../sylar/noncopyable.h
+CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o: ../sylar/socket.h
+CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o: ../sylar/socket_stream.cpp
+CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o: ../sylar/socket_stream.h
+CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o: ../sylar/stream.h
+
+CMakeFiles/sylar.dir/sylar/stream.cpp.o: ../sylar/bytearray.h
+CMakeFiles/sylar.dir/sylar/stream.cpp.o: ../sylar/stream.cpp
+CMakeFiles/sylar.dir/sylar/stream.cpp.o: ../sylar/stream.h
+
 CMakeFiles/sylar.dir/sylar/tcp_server.cpp.o: ../sylar/log.h
 CMakeFiles/sylar.dir/sylar/tcp_server.cpp.o: ../sylar/address.h
 CMakeFiles/sylar.dir/sylar/tcp_server.cpp.o: ../sylar/config.h

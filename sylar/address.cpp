@@ -3,6 +3,7 @@
 #include <sstream>
 #include <netdb.h>
 #include <ifaddrs.h> //网卡相关信息
+#include <stddef.h>
 
 #include "endian.h"
 

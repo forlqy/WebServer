@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sylar.dir/sylar/log.cpp.o"
   "CMakeFiles/sylar.dir/sylar/scheduler.cpp.o"
   "CMakeFiles/sylar.dir/sylar/socket.cpp.o"
+  "CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o"
+  "CMakeFiles/sylar.dir/sylar/stream.cpp.o"
   "CMakeFiles/sylar.dir/sylar/tcp_server.cpp.o"
   "CMakeFiles/sylar.dir/sylar/thread.cpp.o"
   "CMakeFiles/sylar.dir/sylar/timer.cpp.o"

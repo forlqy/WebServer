@@ -132,6 +132,18 @@ CMakeFiles/sylar.dir/sylar/socket.cpp.o
  /home/ubuntu/WebServer/sylar/thread.h
  /home/ubuntu/WebServer/sylar/timer.h
  /home/ubuntu/WebServer/sylar/util.h
+CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o
+ /home/ubuntu/WebServer/sylar/address.h
+ /home/ubuntu/WebServer/sylar/bytearray.h
+ /home/ubuntu/WebServer/sylar/noncopyable.h
+ /home/ubuntu/WebServer/sylar/socket.h
+ /home/ubuntu/WebServer/sylar/socket_stream.cpp
+ /home/ubuntu/WebServer/sylar/socket_stream.h
+ /home/ubuntu/WebServer/sylar/stream.h
+CMakeFiles/sylar.dir/sylar/stream.cpp.o
+ /home/ubuntu/WebServer/sylar/bytearray.h
+ /home/ubuntu/WebServer/sylar/stream.cpp
+ /home/ubuntu/WebServer/sylar/stream.h
 CMakeFiles/sylar.dir/sylar/tcp_server.cpp.o
  ../sylar/log.h
  /home/ubuntu/WebServer/sylar/address.h

@@ -726,6 +726,60 @@ sylar/socket.cpp.s:
 	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/socket.cpp.s
 .PHONY : sylar/socket.cpp.s
 
+sylar/socket_stream.o: sylar/socket_stream.cpp.o
+
+.PHONY : sylar/socket_stream.o
+
+# target to build an object file
+sylar/socket_stream.cpp.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o
+.PHONY : sylar/socket_stream.cpp.o
+
+sylar/socket_stream.i: sylar/socket_stream.cpp.i
+
+.PHONY : sylar/socket_stream.i
+
+# target to preprocess a source file
+sylar/socket_stream.cpp.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/socket_stream.cpp.i
+.PHONY : sylar/socket_stream.cpp.i
+
+sylar/socket_stream.s: sylar/socket_stream.cpp.s
+
+.PHONY : sylar/socket_stream.s
+
+# target to generate assembly for a file
+sylar/socket_stream.cpp.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/socket_stream.cpp.s
+.PHONY : sylar/socket_stream.cpp.s
+
+sylar/stream.o: sylar/stream.cpp.o
+
+.PHONY : sylar/stream.o
+
+# target to build an object file
+sylar/stream.cpp.o:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/stream.cpp.o
+.PHONY : sylar/stream.cpp.o
+
+sylar/stream.i: sylar/stream.cpp.i
+
+.PHONY : sylar/stream.i
+
+# target to preprocess a source file
+sylar/stream.cpp.i:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/stream.cpp.i
+.PHONY : sylar/stream.cpp.i
+
+sylar/stream.s: sylar/stream.cpp.s
+
+.PHONY : sylar/stream.s
+
+# target to generate assembly for a file
+sylar/stream.cpp.s:
+	$(MAKE) -f CMakeFiles/sylar.dir/build.make CMakeFiles/sylar.dir/sylar/stream.cpp.s
+.PHONY : sylar/stream.cpp.s
+
 sylar/tcp_server.o: sylar/tcp_server.cpp.o
 
 .PHONY : sylar/tcp_server.o
@@ -1281,6 +1335,12 @@ help:
 	@echo "... sylar/socket.o"
 	@echo "... sylar/socket.i"
 	@echo "... sylar/socket.s"
+	@echo "... sylar/socket_stream.o"
+	@echo "... sylar/socket_stream.i"
+	@echo "... sylar/socket_stream.s"
+	@echo "... sylar/stream.o"
+	@echo "... sylar/stream.i"
+	@echo "... sylar/stream.s"
 	@echo "... sylar/tcp_server.o"
 	@echo "... sylar/tcp_server.i"
 	@echo "... sylar/tcp_server.s"

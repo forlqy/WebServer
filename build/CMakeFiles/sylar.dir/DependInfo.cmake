@@ -18,6 +18,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/WebServer/sylar/log.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/log.cpp.o"
   "/home/ubuntu/WebServer/sylar/scheduler.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/scheduler.cpp.o"
   "/home/ubuntu/WebServer/sylar/socket.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/socket.cpp.o"
+  "/home/ubuntu/WebServer/sylar/socket_stream.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/socket_stream.cpp.o"
+  "/home/ubuntu/WebServer/sylar/stream.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/stream.cpp.o"
   "/home/ubuntu/WebServer/sylar/tcp_server.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/tcp_server.cpp.o"
   "/home/ubuntu/WebServer/sylar/thread.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/thread.cpp.o"
   "/home/ubuntu/WebServer/sylar/timer.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/timer.cpp.o"
