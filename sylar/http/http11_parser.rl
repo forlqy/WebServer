@@ -278,6 +278,12 @@ int http_parser_init(http_parser *parser) {
 size_t http_parser_execute(http_parser *parser, const char *buffer, size_t len, size_t off)  
 {
   if(len == 0) return 0;
+/**原版本不支持分段解析，当报文超过缓冲区大小时会触发断言**/
+  parser->nread = 0;
+  parser->mark = 0;
+  parser->field_len = len;
+  parser->field_start = 0;
+/**此时每次执行exec时将以上字段设置为0可解决此问题**/
 
   const char *p, *pe;
   int cs = parser->cs;

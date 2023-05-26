@@ -81,10 +81,57 @@ CMakeFiles/sylar.dir/sylar/http/http_parser.cpp.o
  /home/ubuntu/WebServer/sylar/http/http_parser.cpp
  /home/ubuntu/WebServer/sylar/http/http_parser.h
  /home/ubuntu/WebServer/sylar/http/httpclient_parser.h
+CMakeFiles/sylar.dir/sylar/http/http_server.cpp.o
+ ../sylar/address.h
+ ../sylar/bytearray.h
+ ../sylar/fiber.h
+ ../sylar/iomanager.h
+ ../sylar/log.h
+ ../sylar/noncopyable.h
+ ../sylar/scheduler.h
+ ../sylar/singleton.h
+ ../sylar/socket.h
+ ../sylar/socket_stream.h
+ ../sylar/stream.h
+ ../sylar/tcp_server.h
+ ../sylar/thread.h
+ ../sylar/timer.h
+ ../sylar/util.h
+ /home/ubuntu/WebServer/sylar/http/http.h
+ /home/ubuntu/WebServer/sylar/http/http_server.cpp
+ /home/ubuntu/WebServer/sylar/http/http_server.h
+ /home/ubuntu/WebServer/sylar/http/http_session.h
+ /home/ubuntu/WebServer/sylar/http/servlet.h
+CMakeFiles/sylar.dir/sylar/http/http_session.cpp.o
+ ../sylar/address.h
+ ../sylar/bytearray.h
+ ../sylar/noncopyable.h
+ ../sylar/socket.h
+ ../sylar/socket_stream.h
+ ../sylar/stream.h
+ /home/ubuntu/WebServer/sylar/http/http.h
+ /home/ubuntu/WebServer/sylar/http/http11_common.h
+ /home/ubuntu/WebServer/sylar/http/http11_parser.h
+ /home/ubuntu/WebServer/sylar/http/http_parser.h
+ /home/ubuntu/WebServer/sylar/http/http_session.cpp
+ /home/ubuntu/WebServer/sylar/http/http_session.h
+ /home/ubuntu/WebServer/sylar/http/httpclient_parser.h
 CMakeFiles/sylar.dir/sylar/http/httpclient_parser.cpp.o
  /home/ubuntu/WebServer/sylar/http/http11_common.h
  /home/ubuntu/WebServer/sylar/http/httpclient_parser.cpp
  /home/ubuntu/WebServer/sylar/http/httpclient_parser.h
+CMakeFiles/sylar.dir/sylar/http/servlet.cpp.o
+ ../sylar/address.h
+ ../sylar/bytearray.h
+ ../sylar/noncopyable.h
+ ../sylar/socket.h
+ ../sylar/socket_stream.h
+ ../sylar/stream.h
+ ../sylar/thread.h
+ /home/ubuntu/WebServer/sylar/http/http.h
+ /home/ubuntu/WebServer/sylar/http/http_session.h
+ /home/ubuntu/WebServer/sylar/http/servlet.cpp
+ /home/ubuntu/WebServer/sylar/http/servlet.h
 CMakeFiles/sylar.dir/sylar/iomanager.cpp.o
  /home/ubuntu/WebServer/sylar/fiber.h
  /home/ubuntu/WebServer/sylar/iomanager.cpp
