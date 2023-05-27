@@ -30,10 +30,10 @@ void HttpServer::handleClient(Socket::ptr client){
         m_dispatch->handle(req, rsp, session);
         //rsp->setBody("XX LOVE YY(^_^)v");
 
-        //SYLAR_LOG_INFO(g_logger) << "request:" << std::endl
-        //    << *req;
-        //SYLAR_LOG_INFO(g_logger) << "response:" << std::endl
-        //    << *rsp;
+        SYLAR_LOG_INFO(g_logger) << "request:" << std::endl
+            << *req;
+        SYLAR_LOG_INFO(g_logger) << "response:" << std::endl
+            << *rsp;
         session->sendResponse(rsp);
     }while(m_isKeepalive);
     session->close();

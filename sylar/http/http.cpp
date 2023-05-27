@@ -13,10 +13,6 @@ HttpMethod StringToHttpMethod(const std::string& m) {
     return HttpMethod::INVALID_METHOD;
 }
 
-/*
-`#` 符号用于将参数或标识符转换为字符串常量，以便在宏定义中进行字符串匹配或其他字符串操作。
-*/
-
 HttpMethod CharsToHttpMethod(const char* m) {
 #define XX(num, name, string) \
     if(strncmp(#string, m, strlen(#string)) == 0) { \
@@ -55,7 +51,7 @@ const char* HttpStatusToString(const HttpStatus& s) {
 
 bool CaseInsensitiveLess::operator()(const std::string& lhs
                             ,const std::string& rhs) const {
-    return strcasecmp(lhs.c_str(), rhs.c_str()) < 0; //此函数比较不分大小写
+    return strcasecmp(lhs.c_str(), rhs.c_str()) < 0;
 }
 
 HttpRequest::HttpRequest(uint8_t version, bool close)
@@ -148,7 +144,7 @@ std::string HttpRequest::toString() const {
 
 std::ostream& HttpRequest::dump(std::ostream& os) const {
     //GET /uri HTTP/1.1
-    //Host: www.sylar.top
+    //Host: wwww.sylar.top
     //
     //
     os << HttpMethodToString(m_method) << " "
@@ -232,13 +228,13 @@ std::ostream& HttpResponse::dump(std::ostream& os) const {
     return os;
 }
 
-std::ostream& operator<< (std::ostream& os, const HttpRequest& req){
+std::ostream& operator<<(std::ostream& os, const HttpRequest& req) {
     return req.dump(os);
 }
-std::ostream& operator<< (std::ostream& os, const HttpResponse& rsp){
+
+std::ostream& operator<<(std::ostream& os, const HttpResponse& rsp) {
     return rsp.dump(os);
 }
-
 
 }
 }
