@@ -13,6 +13,7 @@ int32_t FunctionServlet::handle(HttpRequest::ptr request, HttpResponse::ptr resp
 
 //
 ServletDispatch::ServletDispatch() : Servlet("ServletDispatch") {
+    m_default.reset(new NotFoundServlet());
 }
 
 int32_t ServletDispatch::handle(HttpRequest::ptr request, HttpResponse::ptr response, HttpSession::ptr session){

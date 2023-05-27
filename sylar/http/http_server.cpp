@@ -26,6 +26,7 @@ void HttpServer::handleClient(Socket::ptr client){
         }
 
         HttpResponse::ptr rsp(new HttpResponse(req->getVersion(), req->isClose() || !m_isKeepalive));
+        rsp->setHeader("Server", getName());
         m_dispatch->handle(req, rsp, session);
         //rsp->setBody("XX LOVE YY(^_^)v");
 
