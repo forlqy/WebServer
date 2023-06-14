@@ -1,5 +1,8 @@
+/home/ubuntu/WebServer/build/CMakeFiles/test_daemon.dir
 /home/ubuntu/WebServer/build/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/WebServer/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/WebServer/build/CMakeFiles/test_uri.dir
+/home/ubuntu/WebServer/build/CMakeFiles/test_http_connection.dir
 /home/ubuntu/WebServer/build/CMakeFiles/echo_server.dir
 /home/ubuntu/WebServer/build/CMakeFiles/test_tcp_server.dir
 /home/ubuntu/WebServer/build/CMakeFiles/test_http_parser.dir

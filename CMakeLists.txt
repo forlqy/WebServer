@@ -38,6 +38,9 @@ set(LIB_SRC
     sylar/http/http_session.cpp
     sylar/http/http_server.cpp
     sylar/http/servlet.cpp
+    sylar/uri.cpp
+    sylar/http/http_connection.cpp
+    sylar/daemon.cpp
     )
 
 #ragelmaker(sylar/http/http11_parser.rl LIB_SRC ${CMAKE_CURRENT_SOURCE_DIR}/sylar/http)
@@ -122,6 +125,19 @@ target_link_libraries(echo_server sylar ${LIB_LIB})
 add_executable(test_http_server tests/test_http_server.cpp)
 add_dependencies(test_http_server sylar)
 target_link_libraries(test_http_server sylar ${LIB_LIB})
+
+add_executable(test_http_connection tests/test_http_connection.cpp)
+add_dependencies(test_http_connection sylar)
+target_link_libraries(test_http_connection sylar ${LIB_LIB})
+
+add_executable(test_uri tests/test_uri.cpp)
+add_dependencies(test_uri sylar)
+target_link_libraries(test_uri sylar ${LIB_LIB})
+
+
+add_executable(test_daemon tests/test_daemon.cpp)
+add_dependencies(test_daemon sylar)
+target_link_libraries(test_daemon sylar ${LIB_LIB})
 
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

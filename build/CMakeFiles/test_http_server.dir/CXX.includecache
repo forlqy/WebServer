@@ -145,6 +145,8 @@ thread.h
 ../sylar/thread.h
 
 ../sylar/singleton.h
+memory
+-
 
 ../sylar/socket.h
 memory

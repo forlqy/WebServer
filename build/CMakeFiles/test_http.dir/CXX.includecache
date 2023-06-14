@@ -49,6 +49,8 @@ thread.h
 ../sylar/noncopyable.h
 
 ../sylar/singleton.h
+memory
+-
 
 ../sylar/thread.h
 thread

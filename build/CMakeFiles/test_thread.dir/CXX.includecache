@@ -97,6 +97,8 @@ thread.h
 ../sylar/thread.h
 
 ../sylar/singleton.h
+memory
+-
 
 ../sylar/sylar.h
 macro.h

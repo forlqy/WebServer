@@ -27,6 +27,15 @@ CMakeFiles/sylar.dir/sylar/config.cpp.o: ../sylar/thread.h
 CMakeFiles/sylar.dir/sylar/config.cpp.o: ../sylar/util.h
 CMakeFiles/sylar.dir/sylar/config.cpp.o: ../sylar/config.cpp
 
+CMakeFiles/sylar.dir/sylar/daemon.cpp.o: ../sylar/config.h
+CMakeFiles/sylar.dir/sylar/daemon.cpp.o: ../sylar/log.h
+CMakeFiles/sylar.dir/sylar/daemon.cpp.o: ../sylar/noncopyable.h
+CMakeFiles/sylar.dir/sylar/daemon.cpp.o: ../sylar/singleton.h
+CMakeFiles/sylar.dir/sylar/daemon.cpp.o: ../sylar/thread.h
+CMakeFiles/sylar.dir/sylar/daemon.cpp.o: ../sylar/util.h
+CMakeFiles/sylar.dir/sylar/daemon.cpp.o: ../sylar/daemon.cpp
+CMakeFiles/sylar.dir/sylar/daemon.cpp.o: ../sylar/daemon.h
+
 CMakeFiles/sylar.dir/sylar/fd_manager.cpp.o: ../sylar/fd_manager.cpp
 CMakeFiles/sylar.dir/sylar/fd_manager.cpp.o: ../sylar/fd_manager.h
 CMakeFiles/sylar.dir/sylar/fd_manager.cpp.o: ../sylar/hook.h
@@ -67,6 +76,25 @@ CMakeFiles/sylar.dir/sylar/http/http.cpp.o: ../sylar/http/http.h
 CMakeFiles/sylar.dir/sylar/http/http11_parser.cpp.o: ../sylar/http/http11_common.h
 CMakeFiles/sylar.dir/sylar/http/http11_parser.cpp.o: ../sylar/http/http11_parser.cpp
 CMakeFiles/sylar.dir/sylar/http/http11_parser.cpp.o: ../sylar/http/http11_parser.h
+
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/address.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/bytearray.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/log.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/noncopyable.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/singleton.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/socket.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/socket_stream.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/stream.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/thread.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/uri.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/util.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/http/http.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/http/http11_common.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/http/http11_parser.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/http/http_connection.cpp
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/http/http_connection.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/http/http_parser.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o: ../sylar/http/httpclient_parser.h
 
 CMakeFiles/sylar.dir/sylar/http/http_parser.cpp.o: ../sylar/config.h
 CMakeFiles/sylar.dir/sylar/http/http_parser.cpp.o: ../sylar/log.h
@@ -219,6 +247,10 @@ CMakeFiles/sylar.dir/sylar/timer.cpp.o: ../sylar/thread.h
 CMakeFiles/sylar.dir/sylar/timer.cpp.o: ../sylar/timer.cpp
 CMakeFiles/sylar.dir/sylar/timer.cpp.o: ../sylar/timer.h
 CMakeFiles/sylar.dir/sylar/timer.cpp.o: ../sylar/util.h
+
+CMakeFiles/sylar.dir/sylar/uri.cpp.o: ../sylar/address.h
+CMakeFiles/sylar.dir/sylar/uri.cpp.o: ../sylar/uri.cpp
+CMakeFiles/sylar.dir/sylar/uri.cpp.o: ../sylar/uri.h
 
 CMakeFiles/sylar.dir/sylar/util.cpp.o: ../sylar/fiber.h
 CMakeFiles/sylar.dir/sylar/util.cpp.o: ../sylar/log.h

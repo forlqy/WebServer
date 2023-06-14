@@ -40,6 +40,10 @@ void EchoServer::handleClient(sylar::Socket::ptr client) {
         ba->setPosition(0);
         //SYLAR_LOG_INFO(g_logger) << "recv rt=" << rt << " data=" << std::string((char*)iovs[0].iov_base, rt);
         if(m_type == 1) {//text 
+	    std::string iovs1 = "you connect success! hanzhixue";
+	    //iovs1 << "you connect success!";
+	    //ba->getReadBuffers(iovs1, 1024);
+	    client->send(&iovs1[0], iovs1.size());
             std::cout << ba->toString();// << std::endl;
         } else {
             std::cout << ba->toHexString();// << std::endl;

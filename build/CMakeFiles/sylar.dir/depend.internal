@@ -27,6 +27,15 @@ CMakeFiles/sylar.dir/sylar/config.cpp.o
  ../sylar/thread.h
  ../sylar/util.h
  /home/ubuntu/WebServer/sylar/config.cpp
+CMakeFiles/sylar.dir/sylar/daemon.cpp.o
+ ../sylar/config.h
+ ../sylar/log.h
+ ../sylar/noncopyable.h
+ ../sylar/singleton.h
+ ../sylar/thread.h
+ ../sylar/util.h
+ /home/ubuntu/WebServer/sylar/daemon.cpp
+ /home/ubuntu/WebServer/sylar/daemon.h
 CMakeFiles/sylar.dir/sylar/fd_manager.cpp.o
  /home/ubuntu/WebServer/sylar/fd_manager.cpp
  /home/ubuntu/WebServer/sylar/fd_manager.h
@@ -68,6 +77,25 @@ CMakeFiles/sylar.dir/sylar/http/http11_parser.cpp.o
  /home/ubuntu/WebServer/sylar/http/http11_common.h
  /home/ubuntu/WebServer/sylar/http/http11_parser.cpp
  /home/ubuntu/WebServer/sylar/http/http11_parser.h
+CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o
+ ../sylar/address.h
+ ../sylar/bytearray.h
+ ../sylar/log.h
+ ../sylar/noncopyable.h
+ ../sylar/singleton.h
+ ../sylar/socket.h
+ ../sylar/socket_stream.h
+ ../sylar/stream.h
+ ../sylar/thread.h
+ ../sylar/uri.h
+ ../sylar/util.h
+ /home/ubuntu/WebServer/sylar/http/http.h
+ /home/ubuntu/WebServer/sylar/http/http11_common.h
+ /home/ubuntu/WebServer/sylar/http/http11_parser.h
+ /home/ubuntu/WebServer/sylar/http/http_connection.cpp
+ /home/ubuntu/WebServer/sylar/http/http_connection.h
+ /home/ubuntu/WebServer/sylar/http/http_parser.h
+ /home/ubuntu/WebServer/sylar/http/httpclient_parser.h
 CMakeFiles/sylar.dir/sylar/http/http_parser.cpp.o
  ../sylar/config.h
  ../sylar/log.h
@@ -220,6 +248,10 @@ CMakeFiles/sylar.dir/sylar/timer.cpp.o
  /home/ubuntu/WebServer/sylar/timer.cpp
  /home/ubuntu/WebServer/sylar/timer.h
  /home/ubuntu/WebServer/sylar/util.h
+CMakeFiles/sylar.dir/sylar/uri.cpp.o
+ /home/ubuntu/WebServer/sylar/address.h
+ /home/ubuntu/WebServer/sylar/uri.cpp
+ /home/ubuntu/WebServer/sylar/uri.h
 CMakeFiles/sylar.dir/sylar/util.cpp.o
  /home/ubuntu/WebServer/sylar/fiber.h
  /home/ubuntu/WebServer/sylar/log.h

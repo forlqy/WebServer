@@ -182,6 +182,14 @@ int httpclient_parser_init(httpclient_parser *parser)  {
 /** exec **/
 int httpclient_parser_execute(httpclient_parser *parser, const char *buffer, size_t len, size_t off)  
 {
+    /**原版本不支持分段解析，当报文超过缓冲区大小时会触发断言**/
+    parser->nread = 0;
+    parser->mark = 0;
+    parser->field_len = len;
+    parser->field_start = 0;
+    /**此时每次执行exec时将以上字段设置为0可解决此问题**/
+    
+
     const char *p, *pe;
     int cs = parser->cs;
 

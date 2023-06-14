@@ -7,11 +7,13 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/WebServer/sylar/address.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/address.cpp.o"
   "/home/ubuntu/WebServer/sylar/bytearray.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/bytearray.cpp.o"
   "/home/ubuntu/WebServer/sylar/config.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/config.cpp.o"
+  "/home/ubuntu/WebServer/sylar/daemon.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/daemon.cpp.o"
   "/home/ubuntu/WebServer/sylar/fd_manager.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/fd_manager.cpp.o"
   "/home/ubuntu/WebServer/sylar/fiber.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/fiber.cpp.o"
   "/home/ubuntu/WebServer/sylar/hook.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/hook.cpp.o"
   "/home/ubuntu/WebServer/sylar/http/http.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/http/http.cpp.o"
   "/home/ubuntu/WebServer/sylar/http/http11_parser.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/http/http11_parser.cpp.o"
+  "/home/ubuntu/WebServer/sylar/http/http_connection.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/http/http_connection.cpp.o"
   "/home/ubuntu/WebServer/sylar/http/http_parser.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/http/http_parser.cpp.o"
   "/home/ubuntu/WebServer/sylar/http/http_server.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/http/http_server.cpp.o"
   "/home/ubuntu/WebServer/sylar/http/http_session.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/http/http_session.cpp.o"
@@ -26,6 +28,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/ubuntu/WebServer/sylar/tcp_server.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/tcp_server.cpp.o"
   "/home/ubuntu/WebServer/sylar/thread.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/thread.cpp.o"
   "/home/ubuntu/WebServer/sylar/timer.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/timer.cpp.o"
+  "/home/ubuntu/WebServer/sylar/uri.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/uri.cpp.o"
   "/home/ubuntu/WebServer/sylar/util.cpp" "/home/ubuntu/WebServer/build/CMakeFiles/sylar.dir/sylar/util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
